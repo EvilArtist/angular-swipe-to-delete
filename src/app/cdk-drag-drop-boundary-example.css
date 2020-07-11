@@ -1,0 +1,70 @@
+.example-box {
+  width: 330px;
+  height: 50px;
+  border: solid 1px #ccc;
+  color: rgba(0, 0, 0, 0.87);
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  border-radius: 4px;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  left: 100px;
+  cursor: pointer;
+}
+
+.example-box:active {
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+              0 8px 10px 1px rgba(0, 0, 0, 0.14),
+              0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.example-boundary {
+  width: 430px;
+  height: 50px;
+  left: -100px;
+  position: relative
+}
+
+.container{
+  width: 230px;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative
+}
+
+.button-group{
+  background:#e74c3c;
+  height: 100%;
+  width:100px;
+  box-sizing: border-box;
+  line-height: 50px
+}
+.content{
+  width: 230px;
+  background:rgba(0, 0, 255, 0.479);
+  height: 100%;
+  line-height: 50px
+}
+
+.placeholder{
+  width:100px;
+  height: 100px;
+  border: 1px dot black;
+  display: inline-block;
+  position: relative;
+}
+
+mat-icon{
+  line-height: 50px;
+  color:#fff;
+  cursor: pointer;
+}
+
+.btn{
+  width: 30px;
+  height: 30px;
+}

@@ -1,0 +1,25 @@
+<h2>Most Hated Creatures on the Planet </h2>
+
+<div class="container" *ngFor="let animal of items;let i = index">
+  <div class="example-boundary">
+    <div class="example-box" cdkDragBoundary=".example-boundary" cdkDrag
+      cdkDragLockAxis="x" [cdkDragFreeDragPosition]="dragPositions[i]"
+      (cdkDragEnded)="lockPosition($event, i)" >
+      <div class="content">{{animal}}</div>
+      <div class="button-group">
+        <mat-icon class='btn' (click)= "delete(i)">delete</mat-icon>
+        <mat-icon class='btn' (click)= "turnof(i)">notifications_off</mat-icon>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Copyright 2019 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
+<!-- Copyright 2019 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
